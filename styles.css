@@ -1,7 +1,7 @@
 :root {
     --primary-font-color:#000;
     --header-primary-color:#FFEDE3;
-    --background-primary-color:#FFEDE3;
+    --background-primary-color:#f8dcbc;
 }
 
 * {
@@ -146,14 +146,19 @@ nav ul {
 
 .grid {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: left;
     margin: 0 auto;
 }
 
+.grid ul {
+    list-style: none;
+}
+
 .icon {
     flex-shrink: 0;
-    margin-right: 3.5rem;
+    margin-right: 3rem;
 }
 
 .icon i {
@@ -161,7 +166,8 @@ nav ul {
 }
 
 .desc {
-    text-align: left;
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 #slider {
@@ -237,7 +243,7 @@ nav ul {
 
 .prop-valor h3 {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 2.1rem;
 }
 
 .prop-valor ul {
@@ -265,14 +271,14 @@ nav ul {
 }
 
 .propuesta-valor i {
-    font-size: 24px;
+    font-size: 48px;
     margin-bottom: 8px;
-    color: #965c1a;
+    color: #533008;
     text-align: center;
 }
 
 .propuesta-valor p {
-    font-size: 14px;
+    font-size: 1.2rem;
     margin: 0;
     color: #333;
 }
@@ -305,12 +311,13 @@ nav ul {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
+    font-size: 1.3rem;
 }
 
 .validacion i {
     font-size: 48px;
     margin-bottom: 8px;
-    color: #965c1a;
+    color: #533008;
 }
 
 .validacion:hover {
@@ -324,9 +331,9 @@ nav ul {
 }
 
 #efectividad h3 {
-    margin: 1rem 0;
+    margin: 1rem 0 0;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
 }
 
 .comparative-table {
@@ -345,7 +352,7 @@ nav ul {
     display: table-cell;
     padding: 10px;
     vertical-align: middle;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .header {
@@ -371,11 +378,11 @@ nav ul {
 }
 
 .circle circle:first-child {
-    stroke: #ddd;
+    stroke: #fffcfc;
 }
 
 .circle .progress {
-    stroke: #aa7244;
+    stroke: #bd0f09;
     stroke-dasharray: 188.4;
     stroke-dashoffset: 188.4;
     transition: stroke-dashoffset 1s ease;
@@ -390,8 +397,6 @@ nav ul {
 
 #features {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 1.5rem;
     justify-content: center;
     margin: -100px auto 3rem;
@@ -402,23 +407,23 @@ nav ul {
 #features .grid {
     display: flex;
     align-items: center;
-    justify-content: left;
-    margin: 1rem 0;
+    margin: 1rem auto;
     max-width: 400px;
     min-width: 350px;
 }
 
 #features .icon {
     flex-shrink: 0;
-    margin-right: 3rem;
 }
 
 #features .icon i {
+    margin: 0 auto 0.5rem;
     font-size: 3.5rem;
+    text-align: center;
 }
 
 #features .desc {
-    text-align: left;
+    text-align: center;
 }
 
 .contact-section {
